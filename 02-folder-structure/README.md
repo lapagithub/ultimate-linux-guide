@@ -40,3 +40,11 @@
 | `/mnt` | Temporary mount point for external filesystems. |
 | `/media` | Mount point for removable media (USB, CDs). |
 | `/data` | Likely your **mounted volume** from Windows (`C:/ubuntu-data`). |
+
+### **Extra**
+
+root@ip-172-31-84-61:/# echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+just like windows env variable and path. all the executable commands(bin) should be present in these folders only.
+
+for example tree cmd is not present in the system in usr/bin or in any above dir, so we will first download it and then use cmd which tree or ls /usr/bin | grep ^tree$ this will now show the binarey got installed
