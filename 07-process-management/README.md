@@ -10,6 +10,10 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `ps -u username` – View processes for a specific user
 - `ps -C processname` – Show a process by name
 - `pgrep processname` – Find a process by name and return its PID
+- pgrep -x -f '^processsname$' command
+  -x: Match the exact process name.
+  -f: Match against the full command line.
+   '^-bash$': Regex to match exactly -bash.
 - `pidof processname` – Find the PID of a running program
 
 ### Managing Processes
